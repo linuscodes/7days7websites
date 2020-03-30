@@ -72,6 +72,17 @@ nav.visible {
   opacity: 1;
 }
 
+.contact-mobile {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  text-align: center;
+  z-index: 6;
+  display: none;
+}
+
 header {
   height: 65vh;
   width: 100vw;
@@ -206,5 +217,51 @@ header .content .heading {
 .timeline.visible .item:nth-child(3) {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
+}
+
+@media screen and (max-width: 900px) {
+  header .content {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  nav {
+    padding: 0 50px;
+  }
+  header .content {
+    left: 50px;
+  }
+  .timeline {
+    padding: 0 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  header .content .heading {
+    font-size: 45px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  nav {
+    padding: 0 25px;
+  }
+  header .content {
+    left: 25px;
+  }
+  .timeline {
+    padding: 0 25px 50px 25px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  nav .get-started {
+    display: none;
+  }
+  .contact-mobile {
+    display: block;
+  }
 }
 /*# sourceMappingURL=master.css.map */
